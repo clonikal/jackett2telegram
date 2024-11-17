@@ -408,7 +408,7 @@ async def jackettitem_to_telegram(
 
     externalLinks = ("\n📌 " + "\|".join(externalLinks)) if externalLinks else ""
     message = (
-        f"{helpers.escape_markdown('|'.join(icons),2)} \- {title} by _{trackerName}_"
+        f"{helpers.escape_markdown('|'.join(icons),2)} \- *{title}* desde _{trackerName}_"
         + f"{externalLinks}"
         + f"\n\n📤 {seeders} 📥 {peers} 💾 {grabs} 🗜 {size} 🗃 {files}"
         + f"\n\n{downloadvolumefactor}{uploadvolumefactor}\n\n`{magnetUrl}`"
